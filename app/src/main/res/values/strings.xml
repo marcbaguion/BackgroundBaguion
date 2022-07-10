@@ -3,6 +3,15 @@
     <string name="title">Hello, Baguion</string>
     <string name="name">Name</string>
     <string name="main_button">Change!</string>
+    <string name="day_mode">Day Mode</string>
+    <string name="star">star</string>
+    <string name="from_cit">From CIT</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="_3rd">3rd</string>
+    <string name="_4th">4th</string>
+    <string name="_1st">1st</string>
+    <string name="_2nd">2nd</string>
     <string-array name="user_type">
         <item>Admin</item>
         <item>Student</item>
