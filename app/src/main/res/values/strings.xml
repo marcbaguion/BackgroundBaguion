@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BackgroundBaguion</string>
+    <string name="title">Hello, Baguion</string>
+    <string name="name">Name</string>
+</resources>
