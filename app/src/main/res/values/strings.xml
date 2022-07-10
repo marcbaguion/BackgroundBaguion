@@ -2,4 +2,10 @@
     <string name="app_name">BackgroundBaguion</string>
     <string name="title">Hello, Baguion</string>
     <string name="name">Name</string>
+    <string name="main_button">Change!</string>
+    <string-array name="user_type">
+        <item>Admin</item>
+        <item>Student</item>
+        <item>Teacher</item>
+    </string-array>
 </resources>
