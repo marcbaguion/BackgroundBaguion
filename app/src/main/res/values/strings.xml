@@ -12,6 +12,7 @@
     <string name="_4th">4th</string>
     <string name="_1st">1st</string>
     <string name="_2nd">2nd</string>
+    <string name="enter_name">Enter Name</string>
     <string-array name="user_type">
         <item>Admin</item>
         <item>Student</item>

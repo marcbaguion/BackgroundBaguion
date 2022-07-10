@@ -28,7 +28,8 @@
         android:layout_marginTop="100dp"
         android:autofillHints=""
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="@string/enter_name"
+        android:inputType="date|datetime|textPersonName|text|textImeMultiLine|time"
         android:labelFor="@id/tvLblName"
         android:minHeight="48dp"
         android:text="@string/name"
@@ -38,7 +39,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"
         app:layout_constraintVertical_bias="0.0"
-        tools:text="Enter Name" />
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/tvLblName"
@@ -60,6 +61,7 @@
         android:layout_marginTop="12dp"
         android:entries="@array/user_type"
         android:minHeight="48dp"
+        android:spinnerMode="dialog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toStartOf="parent"
