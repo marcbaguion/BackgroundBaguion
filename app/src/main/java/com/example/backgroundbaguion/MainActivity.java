@@ -3,10 +3,12 @@ package com.example.backgroundbaguion;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -14,6 +16,7 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -23,11 +26,30 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        daynightToggleListenerMethod();
         myButtonListenerMethod();
+        daynightToggleListenerMethod();
+        userTypeChangeListenerMethod(this);
         ConstraintLayout bgElement = (ConstraintLayout) findViewById(R.id.clMain);
         bgElement.setBackgroundColor(Color.RED);
     }
+
+    public void userTypeChangeListenerMethod(Context c){
+        Spinner spUsertype = (Spinner) findViewById(R.id.spUsertype);
+        spUsertype.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                String selected = (String) spUsertype.getItemAtPosition(i);
+                Toast.makeText(c, "You have selected " + selected, Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+    }
+
+
 
 
     public void daynightToggleListenerMethod() {
