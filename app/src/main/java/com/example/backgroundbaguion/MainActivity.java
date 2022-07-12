@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 String selected = (String) spUsertype.getItemAtPosition(i);
                 Toast.makeText(c, "You have selected " + selected, Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
