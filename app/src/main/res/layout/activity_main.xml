@@ -55,7 +55,7 @@
         app:layout_constraintVertical_bias="0.192" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spUsertype"
         android:layout_width="203dp"
         android:layout_height="62dp"
         android:layout_marginTop="12dp"
@@ -75,11 +75,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spUsertype"
         app:layout_constraintVertical_bias="0.908" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/swDay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
@@ -97,20 +97,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spUsertype"
         app:layout_constraintVertical_bias="0.984"
         app:srcCompat="@android:drawable/star_big_on"
         tools:ignore="ImageContrastCheck" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cbCIT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginTop="52dp"
         android:text="@string/from_cit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/spUsertype" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -121,11 +121,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spUsertype"
         app:layout_constraintVertical_bias="0.0">
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rbFemale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
@@ -133,7 +133,7 @@
             android:text="@string/female" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/rbMale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
@@ -152,25 +152,25 @@
         app:layout_constraintTop_toBottomOf="@+id/radioGroup">
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/rbFirst"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_1st" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/rbSecond"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_2nd" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/rbThird"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_3rd" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/rbFourth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_4th" />
